@@ -161,11 +161,12 @@ section .title::after{
     filter: brightness(90%);
 }
 
+/* https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg */
 
 /* home section styling */
 .home{
     display: flex;
-    background: url(https://img.freepik.com/free-vector/dark-low-poly-background_1048-7971.jpg?size=626&ext=jpg) no-repeat center;
+    background: url(https://img.freepik.com/free-vector/dark-black-background-design-with-stripes_1017-38064.jpg?w=1380&t=st=1680444624~exp=1680445224~hmac=43a7e7420f92d400c9504c0829f283284d338ebcff54fbb6cd34b5988714bbeb) no-repeat center;
     height: 100vh;
     color: #fff;
     min-height: 500px;
