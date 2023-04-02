@@ -35,11 +35,18 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .talents, .skills, .works, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
+
+.home .home-content{
+  position: absolute;
+  top: 35%;
+  left: 30%
+}
+
 .about .about-content,
-.services .serv-content,
+.talents .serv-content,
 .skills .skills-content,
 .contact .contact-content{
     display: flex;
@@ -258,21 +265,21 @@ section .title::after{
     background: none;
 }
 
-/* services section styling */
-.services, .teams{
+/* talents section styling */
+.talents, .works{
     color:#fff;
     background: #111;
 }
-.services .title::before,
-.teams .title::before{
+.talents .title::before,
+.works .title::before{
     background: #fff;
 }
-.services .title::after,
-.teams .title::after{
+.talents .title::after,
+.works .title::after{
     background: #111;
     content: "What I Can Do";
 }
-.services .serv-content .card{
+.talents .serv-content .card{
     width: calc(33% - 20px);
     background: #222;
     text-align: center;
@@ -281,24 +288,24 @@ section .title::after{
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover{
+.talents .serv-content .card:hover{
     background: skyblue;
 }
-.services .serv-content .card .box{
+.talents .serv-content .card .box{
     transition: all 0.3s ease;
 }
-.services .serv-content .card:hover .box{
+.talents .serv-content .card:hover .box{
     transform: scale(1.05);
 }
-.services .serv-content .card i{
+.talents .serv-content .card i{
     font-size: 50px;
     color: skyblue;
     transition: color 0.3s ease;
 }
-.services .serv-content .card:hover i{
+.talents .serv-content .card:hover i{
     color: #fff;
 }
-.services .serv-content .card .text{
+.talents .serv-content .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
@@ -379,11 +386,11 @@ section .title::after{
     width: 80%;
 }
 
-/* teams section styling */
-.teams .title::after{
+/* works section styling */
+.works .title::after{
     content: "Since 2021";
 }
-.teams .carousel .card{
+.works .carousel .card{
     background: #222;
     border-radius: 6px;
     padding: 25px 35px;
@@ -391,25 +398,25 @@ section .title::after{
     overflow: hidden;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover{
+.works .carousel .card:hover{
     background: skyblue;
 }
-.teams .carousel .card .box{
+.works .carousel .card .box{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover .box{
+.works .carousel .card:hover .box{
     transform: scale(1.05);
 }
-.teams .carousel .card .text{
+.works .carousel .card .text{
     font-size: 25px;
     font-weight: 500;
     margin: 10px 0 7px 0;
 }
-.teams .carousel .card img{
+.works .carousel .card img{
     height: 150px;
     width: 150px;
     object-fit: cover;
@@ -417,7 +424,7 @@ section .title::after{
     border: 5px solid skyblue;
     transition: all 0.3s ease;
 }
-.teams .carousel .card:hover img{
+.works .carousel .card:hover img{
     border-color: #fff;
 }
 .owl-dots{
@@ -622,7 +629,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .services .serv-content .card{
+    .talents .serv-content .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
@@ -646,7 +653,7 @@ footer span a:hover{
     .home .home-content a{
         font-size: 20px;
     }
-    .services .serv-content .card{
+    .talents .serv-content .card{
         width: 100%;
     }
 }
